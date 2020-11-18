@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/add/" role="form" method="post">
+        <div>
+            {{ form.title }}
+        </div>
+        <div>
+            {{ form.content }}
+        </div>
+        <div>
+            {{ form.types }}
+        </div>
+
+        <div>
+        {{ form.images }}
+        </div>
+        <!--csrf-->
+        {{ form.csrf_token }}
+        {{ form.submit }}
+    </form>
+
+</body>
+</html>
