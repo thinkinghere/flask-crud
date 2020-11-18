@@ -5,7 +5,7 @@ from forms import NewsForm
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:871577942@localhost:3306/news?charset=utf8'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:123@localhost:3306/news?charset=utf8'
 app.config['SECRET_KEY'] = 'csrf key'
 db = SQLAlchemy(app)
 
